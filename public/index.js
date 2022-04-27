@@ -142,13 +142,13 @@ function createCredential(challenge) {
   var createCredentialOptions = {
     rp: {
       name: "MozAuth",
-      icon: "fingerprint.png",
+      icon: "https://mozauth.com/fingerprint.png",
     },
     user: {
       id: stringToArrayBuffer("mike.heavers"),
       name: "mheavers@mozilla.com",
       displayName: "Mike Heavers",
-      icon: "fingerprint.png",
+      icon: "https://mozauth.com/fingerprint.png",
     },
     pubKeyCredParams: [
       {
