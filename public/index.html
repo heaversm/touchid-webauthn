@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+    <title>MozAuth</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <br>
+                <h3>
+                    <img class="fingerprint" src="fingerprint.png" alt="fingerprint icon">
+                    MozAuth
+                </h3>
+                <h5>Sign in with TouchID</h5>
+            
+                <p>MozAuth now supports login with TouchID, FaceID, USB Authenticator, and other <a href="https://webauthn.me/introduction">WebAuthN</a> authentication methods. To get started, register your fingerprint using the "Register Fingerprint" button below.</p>
+            </div>
+        </div>
+
+        <br>
+
+        <button class="btn btn-primary" href="#" role="button" type="button" id="register">
+            <i class="fa fa-spinner fa-spin spinner hidden" id="registerSpinner"></i>Register Fingerprint</button>
+        <button class="btn btn-primary hidden" href="#" role="button" type="button" id="authenticate">
+            <i class="fa fa-spinner fa-spin spinner hidden" id="authenticateSpinner"></i>Authenticate</button>
+        <br>
+        <br>
+        <br>
+        <div class="alert alert-primary hidden wordWrap" role="alert" id="status">
+            Successfully received assertion
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
